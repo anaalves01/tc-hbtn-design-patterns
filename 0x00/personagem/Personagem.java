@@ -14,13 +14,13 @@ public abstract class Personagem {
     }
 
     public Personagem(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
-        this.nome = nome;
-        this.tipo = tipo;
-        this.inteligencia = inteligencia;
-        this.forca = forca;
-        this.vigor = vigor;
-        this.resistencia = resistencia;
-        this.destreza = destreza;
+        setNome(nome);
+        setTipo(tipo);
+        setInteligencia(inteligencia);
+        setForca(forca);
+        setVigor(vigor);
+        setResistencia(resistencia);
+        setDestreza(destreza);
     }
 
     public String getNome() {
