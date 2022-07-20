@@ -112,7 +112,7 @@ public class Impressao {
         return String.format("total de paginas: %d, total coloridas: %d, total preto e branco: %d, %s. total: R$ %.2f", getPaginasTotais(), getPaginasColoridas(), getPaginasPretoBranco(), ((isEhFrenteVerso()) ? "frente e verso" : "frente apenas"), calcularTotal());
     }
 
-    private double calcularTotal() {
+    public double calcularTotal() {
         HashMap<TamanhoImpressao, Rule<Double>> rulesOnlyFrontPrinting = createRulesOnlyFrontPrinting();
         HashMap<TamanhoImpressao, Rule<Double>> rulesDuplexPrinting = createRulesDuplexPrinting();
         double total;
